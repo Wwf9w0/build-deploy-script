@@ -1,7 +1,6 @@
 #!/bin/bash
 
 function compile() {
-
     echo "Compiling Spring Boot project with Maven..."
     mvn clean install || { echo "Compilation failed!"; exit 1; }
 }
