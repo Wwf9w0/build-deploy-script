@@ -44,7 +44,7 @@ function run_docker_container() {
 
     echo "Running Docker image: $imageName"
     docker run -d --name $containerName -p 8080:8080 $imageName || { echo "Failed to run Docker container!"; exit 1; }
-    echo "Docker container started. The application is accessible at http://localhost:880."
+    echo "Docker container started. The application is accessible at http://localhost:8080."
 }
 
 
